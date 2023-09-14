@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-    /* background-color: rgb(57, 57, 255); */
     background-color: rgb(243, 33, 33);
     height: 350px;
     margin-left: 35%;
@@ -38,6 +37,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 10px 0; /* Add vertical margin to separate elements */
     margin-left: 4%;
+}
+#generowanie {
+    position: absolute; /* Position the element absolutely */
+    left: 33%; 
+    margin-bottom: -2%;
 }
 
 
