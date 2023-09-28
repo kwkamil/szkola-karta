@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Obsługa kliknięcia przycisku "wygeneruj kartę"
     generujKarteButton.addEventListener("click", function () {
         // Pobierz wartości z inputów
-        const nowyNumerKarty = inputNumer.value;
-        const nowaData = inputData.value;
-        const noweImie = inputImie.value;
+        const nowyNumerKarty = inputNumer.value || '************';
+        const nowaData = inputData.value || '**/**';
+        const noweImie = inputImie.value || '***********';
 
         // Ustaw nowe wartości w divach
         numerKartyDiv.innerHTML = nowyNumerKarty;
