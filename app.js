@@ -1,25 +1,24 @@
-const inputNumer = document.getElementById('input_numer');
-        const inputData = document.getElementById('input_data');
-        const inputImie = document.getElementById('input_imie');
-        const numerDiv = document.getElementById('numer');
-        const dataDiv = document.getElementById('data');
-        const imieDiv = document.getElementById('imie');
-        const generateButton = document.getElementById('generate_button');
+document.addEventListener("DOMContentLoaded", function () {
+    // Pobierz referencje do elementów HTML
+    const numerKartyDiv = document.getElementById("numer");
+    const dataDiv = document.getElementById("data");
+    const imieDiv = document.getElementById("imie");
 
-        // Add click event listener to the "wygeneruj kartę" button
-        generateButton.addEventListener('click', function () {
-            // Get the values from the input fields
-            const numerValue = inputNumer.value;
-            const dataValue = inputData.value;
-            const imieValue = inputImie.value;
+    const inputNumer = document.getElementById("input_numer");
+    const inputData = document.getElementById("input_data");
+    const inputImie = document.getElementById("input_imie");
+    const generujKarteButton = document.getElementById("generujKarte");
 
-            // Update the content of the div elements with the new values
-            numerDiv.textContent = numerValue;
-            dataDiv.textContent = dataValue;
-            imieDiv.textContent = imieValue;
+    // Obsługa kliknięcia przycisku "wygeneruj kartę"
+    generujKarteButton.addEventListener("click", function () {
+        // Pobierz wartości z inputów
+        const nowyNumerKarty = inputNumer.value;
+        const nowaData = inputData.value;
+        const noweImie = inputImie.value;
 
-            // Clear the input fields
-            inputNumer.value = '';
-            inputData.value = '';
-            inputImie.value = '';
-        });
+        // Ustaw nowe wartości w divach
+        numerKartyDiv.innerHTML = nowyNumerKarty;
+        dataDiv.innerHTML = nowaData;
+        imieDiv.innerHTML = noweImie;
+    });
+});

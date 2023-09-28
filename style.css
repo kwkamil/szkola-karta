@@ -9,6 +9,10 @@
     margin-top: 15%; 
     margin-bottom: 15%; 
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s;
+}
+#karta:hover {
+    transform: rotateY(10deg) scale(1.05);
 }
 #zdjecie{
     height: 100px;
