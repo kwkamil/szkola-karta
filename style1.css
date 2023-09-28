@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+#karta {
+    background-color: lightblue;
+    height: 350px;
+    width: 800px;      
+    border-radius: 6px;
+    align-items: center;
+    position: absolute;
+      }
+    
+#zdjecie{
+    height: 100px;
+    width: 100px;
+    margin-left: 80%;
+}
